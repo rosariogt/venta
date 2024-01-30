@@ -1,5 +1,8 @@
 package enums;
 
+import java.util.HashSet;
+import java.util.Set;
+
 public enum EnumTipoEntrega {
 
     DELIVERY(1, "DELIVERY"),
@@ -22,4 +25,10 @@ public enum EnumTipoEntrega {
         this.descripcion = descripcion;
     }
 
+    public static Set<Integer> getCodigos() {
+        Set<Integer> codigoSet = new HashSet<>();
+        for (EnumTipoEntrega vEnum : EnumTipoEntrega.values())
+            codigoSet.add(vEnum.getCodigo());
+        return codigoSet;
+    }
 }
