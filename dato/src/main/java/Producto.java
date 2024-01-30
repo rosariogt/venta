@@ -1,20 +1,22 @@
 public class Producto {
 
-    private int codigo;
+    private String codigo;
     private String nombre;
     private String tipoProducto;
+    private String unidadMedida;
 
-    public Producto(int codigo, String nombre, String tipoProducto) {
+    public Producto(String codigo, String nombre, String tipoProducto, String unidadMedida) {
         this.codigo = codigo;
         this.nombre = nombre;
         this.tipoProducto = tipoProducto;
+        this.unidadMedida = unidadMedida;
     }
 
-    public int getCodigo() {
+    public String getCodigo() {
         return codigo;
     }
 
-    public void setCodigo(int codigo) {
+    public void setCodigo(String codigo) {
         this.codigo = codigo;
     }
 
@@ -33,4 +35,13 @@ public class Producto {
     public void setTipoProducto(String tipoProducto) {
         this.tipoProducto = tipoProducto;
     }
+
+    public String getUnidadMedida() {
+        return unidadMedida;
+    }
+
+    public void setUnidadMedida(String unidadMedida) {
+        this.unidadMedida = unidadMedida;
+    }
+    
 }
