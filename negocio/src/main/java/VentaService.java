@@ -1,3 +1,6 @@
+import enums.EnumTipoEntrega;
+import enums.EnumTipoPago;
+
 import java.util.ArrayList;
 import java.util.List;
 
@@ -16,9 +19,9 @@ public class VentaService {
 
     private List<Mensaje> verificarParametricas(NotaVenta notaVenta) {
         List<Mensaje> mensajes = new ArrayList<>();
-        if (enums.EnumTipoPago.getCodigos().contains(notaVenta.getTipoPago()))
+        if (EnumTipoPago.getCodigos().contains(notaVenta.getTipoPago()))
             mensajes.add(new Mensaje(1, "NO EXISTE TIPO DE PAGO"));
-        if (enums.EnumTipoEntrega.getCodigos().contains(notaVenta.getTipoEntrega()))
+        if (EnumTipoEntrega.getCodigos().contains(notaVenta.getTipoEntrega()))
             mensajes.add(new Mensaje(2, "NO EXISTE TIPO DE ENTREGA"));
         return mensajes;
     }
