@@ -1,5 +1,8 @@
 package enums;
 
+import java.util.HashSet;
+import java.util.Set;
+
 public enum EnumTipoPago {
     EFECTIVO(1, "EFECTIVO"),
     TARJETA(2, "TARJETA"),

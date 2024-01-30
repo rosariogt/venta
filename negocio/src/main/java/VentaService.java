@@ -1,3 +1,9 @@
+import enums.EnumTipoEntrega;
+import enums.EnumTipoPago;
+
+import java.util.ArrayList;
+import java.util.List;
+
 public class VentaService {
 
     public RespuestaRegistroVenta registrar(NotaVenta notaVenta) {
