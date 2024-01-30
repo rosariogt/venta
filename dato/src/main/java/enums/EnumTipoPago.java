@@ -21,4 +21,11 @@ public enum EnumTipoPago {
         this.descripcion = descripcion;
     }
 
+    public static Set<Integer> getCodigos() {
+        Set<Integer> codigoSet = new HashSet<>();
+        for (EnumTipoPago vEnum : EnumTipoPago.values())
+            codigoSet.add(vEnum.getCodigo());
+        return codigoSet;
+    }
+
 }
