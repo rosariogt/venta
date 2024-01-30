@@ -8,6 +8,15 @@ public class DetalleVenta {
     private String nombre;
     private String unidadMedida;
 
+    public DetalleVenta(BigDecimal cantidad, BigDecimal precio, Long codigo, String tipoProducto, String nombre, String unidadMedida){
+        this.cantidad = cantidad;
+        this.precio = precio;
+        this.codigo = codigo;
+        this.tipoProducto = tipoProducto;
+        this.nombre = nombre;
+        this.unidadMedida = unidadMedida;
+    }
+
     public BigDecimal getCantidad() {
         return cantidad;
     }
