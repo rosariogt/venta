@@ -12,8 +12,8 @@ public class ClienteService {
         this.clientesMap.put("7412547", new Cliente("Carlos", "789-6"));
     }
 
-    public Boolean obtenerPorDocumento(String numeroDocumento) {
-        return true;
+    public Cliente obtenerPorDocumento(String numeroDocumento) {
+        return clientesMap.get(numeroDocumento);
     }
 
     public void registrar(Cliente cliente) {

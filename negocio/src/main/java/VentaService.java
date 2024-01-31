@@ -14,7 +14,7 @@ public class VentaService {
             return respuesta;
         }
 
-        return null;
+        return respuesta;
     }
 
     private List<Mensaje> verificarParametricas(NotaVenta notaVenta) {
