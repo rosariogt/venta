@@ -5,8 +5,9 @@ import java.util.stream.Collectors;
 
 public class ProductoService {
 
-    private Map<String, Producto> productosMap = new HashMap<>();
-    public ProductoService() {
+   private Map<String, Producto> productosMap = new HashMap<>();
+    
+   public ProductoService() {
         this.productosMap.put("01", new Producto("01", "tela", "producto", "metros"));
         this.productosMap.put("02", new Producto("02", "pintura", "producto", "litros"));
         this.productosMap.put("03", new Producto("03", "barniz", "producto", "litros"));

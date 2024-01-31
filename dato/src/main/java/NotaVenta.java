@@ -9,6 +9,15 @@ public class NotaVenta {
     private BigDecimal montoDescuento;
     private List<DetalleVenta> detalles;
 
+    public NotaVenta(Cliente cliente, Parametrica tipoPago, Parametrica tipoEntrega, BigDecimal montoTotal, BigDecimal montoDescuento, List<DetalleVenta> detalles){
+        this.cliente = cliente;
+        this.tipoPago = tipoPago;
+        this.tipoEntrega = tipoEntrega;
+        this.montoTotal = montoTotal;
+        this.montoDescuento = montoDescuento;
+        this.detalles = detalles;
+    }
+
     public Cliente getCliente() {
         return cliente;
     }
